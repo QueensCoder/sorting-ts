@@ -7,13 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
-    "start": "npx concurrently npm:start:*"
+    "start": "concurrently npm:start:*"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.3",
-    "tsc": "^1.20150623.0"
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.8.3"
   }
 }
