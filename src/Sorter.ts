@@ -1,9 +1,3 @@
-interface Sortable {
-  length: number;
-  compare(leftIdx: number, rightIdx: number): boolean;
-  swap(leftIdx: number, rightIdx: number): void;
-}
-
 // we used this because several classes wanted to use the bubbleSort method
 // makes our factor cleaner
 export abstract class Sorter {

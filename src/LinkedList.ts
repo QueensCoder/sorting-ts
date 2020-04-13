@@ -3,14 +3,17 @@ import { Sorter } from './Sorter';
 class Node {
   next: Node | null = null;
 
-  constructor(public data: number) {}
+  constructor(public data: number) {
+    this.next = null;
+  }
 }
 
 export class LinkedList extends Sorter {
+  head: Node | null = null;
   constructor() {
     super();
+    this.head = null;
   }
-  head: Node | null = null;
 
   add(data: number): void {
     const node = new Node(data);

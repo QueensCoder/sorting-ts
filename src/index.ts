@@ -15,8 +15,6 @@ console.log(charCollection.data);
 // sort values in a linked list
 const listValues = [500, -10, -3, 4];
 const linkedList = new LinkedList();
-
 listValues.forEach((value) => linkedList.add(value));
-
 linkedList.bubbleSort();
 linkedList.print();
